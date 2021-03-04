@@ -1,15 +1,25 @@
 <template>
   <div class="container">
-    <h1>Hello World</h1>
+    <Snippets />
   </div>
 </template>
 
 <script>
-export default {}
+import Snippets from '~/components/Snippets.vue'
+export default {
+  components:{Snippets}
+}
 </script>
 
 <style>
   h1{
     text-align: center;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
 </style>
