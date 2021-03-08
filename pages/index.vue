@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <Snippets />
+    <nuxt-link to="skeleton">Skeletons</nuxt-link>
   </div>
 </template>
 

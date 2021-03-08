@@ -1,14 +1,23 @@
 <template>
   <div class="wrapper">
-      <div class="spinner"></div>
+      <!-- <div class="spinner"></div> -->
 
-      <label class="switch">
+      <!-- <label class="switch">
         <input type="checkbox" class="checkbox">
         <span class="toggle-thumb">
           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill:#4ADE80;transform:;-ms-filter:"><path d="M10 15.586L6.707 12.293 5.293 13.707 10 18.414 19.707 8.707 18.293 7.293z"></path></svg>
           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill:#F87171;transform:;-ms-filter:"><path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"></path></svg>
         </span>
-      </label>
+      </label> -->
+
+      <div class="buttons">
+        <button class="cta cta-1">
+          <span>Button 1</span>
+        </button>
+
+        <button class="cta cta-2">Button 2</button>
+        <button class="cta pulse-effect">Pulse Effect</button>
+      </div>
   </div>
 </template>
 
@@ -19,7 +28,7 @@ export default {
 </script>
 
 <style>
-    .spinner {
+    /* .spinner {
       width: 64px;
       height: 64px;
       border: 8px solid;
@@ -78,8 +87,21 @@ export default {
       transition: .4s all ease;
     }
 
-    input:checked+.toggle-thumb:before {
+    .checkbox:checked + .toggle-thumb:before {
       transform: translateX(26px);
+    } */
+
+
+    .cta {
+      border: none;
+      padding: 1.5rem 3rem;
+      border-radius: 5px;
+      margin: 0 3rem;
+      font-size: 1.6rem;
+      font-family: sans-serif;
+      cursor: pointer;
     }
+
+
 
 </style>
